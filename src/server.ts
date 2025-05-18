@@ -1,5 +1,10 @@
-function welcome(name: string, age: number) {
-    console.log(`Hello ${name}, you are ${age} years old`)
+function welcome() {
+    const obj = {
+        "name": "John",
+        "age": 30,
+        "city": "New York"
+    }
+    console.log(obj.name);
 }
 
-welcome('Nithin', 20)
+welcome()
