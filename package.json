@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/codeWithNithin/mern-auth-service/issues"
   },
-  "homepage": "https://github.com/codeWithNithin/mern-auth-service#readme"
+  "homepage": "https://github.com/codeWithNithin/mern-auth-service#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "typescript": "^5.8.3"
+  }
 }
