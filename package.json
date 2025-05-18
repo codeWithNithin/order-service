@@ -1,23 +1,26 @@
 {
-  "name": "auth-service",
-  "version": "1.0.0",
-  "description": "Auth service for MERN project",
-  "main": "src/server.js",
-  "scripts": {
-    "dev": "nodemon src/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codeWithNithin/mern-auth-service.git"
-  },
-  "author": "Nithin Kumar",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/codeWithNithin/mern-auth-service/issues"
-  },
-  "homepage": "https://github.com/codeWithNithin/mern-auth-service#readme",
-  "devDependencies": {
-    "@types/node": "^22.15.18",
-    "typescript": "^5.8.3"
-  }
+    "name": "auth-service",
+    "version": "1.0.0",
+    "description": "Auth service for MERN project",
+    "main": "src/server.js",
+    "scripts": {
+        "dev": "nodemon src/server.js",
+        "format:fix": "prettier . --write",
+        "format:check": "prettier . --check"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/codeWithNithin/mern-auth-service.git"
+    },
+    "author": "Nithin Kumar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/codeWithNithin/mern-auth-service/issues"
+    },
+    "homepage": "https://github.com/codeWithNithin/mern-auth-service#readme",
+    "devDependencies": {
+        "@types/node": "^22.15.18",
+        "prettier": "3.5.3",
+        "typescript": "^5.8.3"
+    }
 }
