@@ -4,7 +4,7 @@
     "description": "Auth service for MERN project",
     "main": "src/server.js",
     "scripts": {
-        "dev": "nodemon src/server.js",
+        "dev": "nodemon src/server.ts",
         "format:fix": "prettier . --write",
         "format:check": "prettier . --check",
         "lint:fix": "eslint . --fix",
@@ -23,11 +23,14 @@
     "homepage": "https://github.com/codeWithNithin/mern-auth-service#readme",
     "devDependencies": {
         "@eslint/js": "^9.27.0",
+        "@types/express": "^5.0.2",
         "@types/node": "^22.15.18",
         "eslint": "^9.27.0",
         "husky": "^9.1.7",
         "lint-staged": "^16.0.0",
+        "nodemon": "^3.1.10",
         "prettier": "3.5.3",
+        "ts-node": "^10.9.2",
         "typescript": "^5.8.3",
         "typescript-eslint": "^8.32.1"
     },
@@ -38,6 +41,7 @@
         ]
     },
     "dependencies": {
-        "dotenv": "^16.5.0"
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0"
     }
 }
