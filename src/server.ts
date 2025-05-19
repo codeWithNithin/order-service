@@ -1,10 +1,3 @@
-function welcome() {
-    const obj = {
-        "name": "John",
-        "age": 30,
-        "city": "New York"
-    }
-    console.log(obj.name);
-}
+import { Config } from './config'
 
-welcome()
+console.log(Config.PORT)
