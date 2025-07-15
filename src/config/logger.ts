@@ -1,9 +1,9 @@
 import winston from 'winston'
-import { Config } from '.'
+import config from 'config'
 
 export const logger = winston.createLogger({
     level: 'info',
-    defaultMeta: { service: 'auth-service' },
+    defaultMeta: { service: 'order-service' },
     transports: [
         new winston.transports.File({
             level: 'info',
@@ -13,7 +13,7 @@ export const logger = winston.createLogger({
                 winston.format.timestamp(),
                 winston.format.json(),
             ),
-            silent: Config.NODE_ENV === 'test',
+            silent: config.get('server.NODE_ENV') === 'test',
         }),
         new winston.transports.File({
             level: 'error',
@@ -23,7 +23,7 @@ export const logger = winston.createLogger({
                 winston.format.timestamp(),
                 winston.format.json(),
             ),
-            silent: Config.NODE_ENV === 'test',
+            silent: config.get('server.NODE_ENV') === 'test',
         }),
         new winston.transports.Console({
             level: 'info',
@@ -31,7 +31,7 @@ export const logger = winston.createLogger({
                 winston.format.timestamp(),
                 winston.format.json(),
             ),
-            silent: Config.NODE_ENV === 'test',
+            silent: config.get('server.NODE_ENV') === 'test',
         }),
     ],
 })
