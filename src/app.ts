@@ -3,6 +3,7 @@ import { HttpError } from 'http-errors'
 import { logger } from './config/logger'
 import cookieParser from 'cookie-parser'
 import customerRouter from './customers/customer-router'
+import couponRouter from './couponCodes/coupon-router'
 
 const app = express()
 
@@ -14,6 +15,7 @@ app.get('/', (req: Request, res: Response) => {
 })
 
 app.use('/customers', customerRouter)
+app.use('/coupons', couponRouter)
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
